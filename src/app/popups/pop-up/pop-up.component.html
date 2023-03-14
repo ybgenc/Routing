@@ -1,0 +1,9 @@
+<app-divider>Pop-Up</app-divider>
+
+<div (click)="onClick()"    class="ui animated fade button" tabindex="0">
+    <div class="visible content">KULLANICI ONAYI</div>
+    <div class="hidden content">
+      ONAYLA
+    </div>
+
+<app-modal (close)="onClick()" *ngIf="modalOpen"></app-modal>
