@@ -1,1 +1,16 @@
-<p>Charts</p>
+
+<app-divider>Employees</app-divider>
+
+<div class="ui link items">
+    <div class="item" *ngFor="let worker of employee">
+      <div class="ui tiny image">
+        <img [src]="worker.image">
+      </div>
+      <div class="content">
+        <div class="header">{{worker.name}}</div>
+        <div class="description">
+          <p>{{worker.title}}</p>
+          <p>{{worker.description}}</p>
+        </div>
+    </div>
+ </div>
